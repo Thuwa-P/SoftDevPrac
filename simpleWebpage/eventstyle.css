@@ -1,0 +1,24 @@
+#page {
+  background-color: beige;
+}
+#header {
+  color: crimson;
+  text-align: center;
+  font-style: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+#poster {
+  text-align: center;
+}
+.detail {
+  text-align: center;
+  font-style: italic;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+}
+.info {
+  text-align: center;
+  font-size: large;
+  background-color: aquamarine;
+  font-family: "Times New Roman", Times, serif;
+}

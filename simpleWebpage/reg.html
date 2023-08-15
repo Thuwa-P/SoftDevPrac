@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+  <div id="page">
+    <head>
+      <link rel="stylesheet" href="regstyle.css" />
+      <title>Registration Form</title>
+    </head>
+    <body>
+      <h1>แบบฟอร์มลงทะเบียนผู้ประกอบการ</h1>
+      <div>
+        <form id="registration form">
+          <div class="formelement">
+            <label for="cname">ชื่อร้าน</label><br />
+            <input type="text" id="cname" name="cname" placeholder="ชื่อร้าน" />
+          </div>
+          <div class="formelement">
+            <label for="boothSize">ขนาดของร้าน</label><br />
+            <select name="boothSize" id="boothSize" required>
+              <option value="10by10">10 x 10 ฟุต</option>
+              <option value="10by15">10 x 15 ฟุต</option>
+            </select>
+          </div>
+          <div class="formelement">
+            <label for="table">ต้องการตั้งโต๊ะหรือไม่</label><br />
+            <input type="checkbox" id="table" name="table" checked />ต้องการ
+            <input type="checkbox" id="noTable" name="noTable" />ไม่ต้องการ
+          </div>
+          <div class="formelement">
+            <label for="chair">จำนวนเก้าอี้</label><br />
+            <input type="text" id="chair" name="chair" placeholder="3 ตัว" />
+          </div>
+          <div class="formelement">
+            <label for="contactPerson">ชื่อผู้ติดต่อ</label><br />
+            <input type="text" id="contactPerson" name="contactPerson" />
+          </div>
+          <div class="formelement">
+            <label for="phoneNum">เบอร์โทรศัพท์ผู้ติดต่อ</label><br />
+            <input type="text" id="phoneNum" name="phoneNum" />
+          </div>
+          <div class="formelement">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </body>
+  </div>
+</html>
