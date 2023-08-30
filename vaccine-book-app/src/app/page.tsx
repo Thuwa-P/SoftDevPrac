@@ -8,8 +8,18 @@ export default function Home() {
     <main>
       <Banner></Banner>
       <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
-        <ProductCard></ProductCard>
-        <ProductCard></ProductCard>
+        <ProductCard
+          hospitalName="Chulalongkorn Hospital"
+          imgSrc="/img/chula.jpg"
+        ></ProductCard>
+        <ProductCard
+          hospitalName="Rajavithi Hospital"
+          imgSrc="/img/rajavithi.jpg"
+        ></ProductCard>
+        <ProductCard
+          hospitalName="Thammasat University Hospital"
+          imgSrc="/img/thammasat.jpg"
+        ></ProductCard>
       </div>
     </main>
   );
