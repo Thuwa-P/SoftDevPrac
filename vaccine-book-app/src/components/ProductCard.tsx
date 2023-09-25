@@ -30,6 +30,7 @@ export default function ProductCard({
       <Rating
         value={hospitalRating}
         onChange={(event, hospitalRating) => {
+          event.preventDefault();
           event.stopPropagation();
           onCompare(hospitalName, hospitalRating);
         }}

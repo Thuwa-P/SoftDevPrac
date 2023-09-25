@@ -12,7 +12,7 @@ export default function InteractiveCard({
   }
 
   return (
-    <div className="w-1/5 h-[300px] rounded-lg shadow-lg hover:bg-neutral-200 hover:shadow-2xl ">
+    <div className="w-full h-[300px] rounded-lg shadow-lg hover:bg-neutral-200 hover:shadow-2xl ">
       {children}
     </div>
   );
