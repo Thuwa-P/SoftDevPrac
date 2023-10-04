@@ -22,12 +22,12 @@ export default function Banner() {
         objectFit="cover"
       ></Image>
       <div className={styles.bannerText}>
-        <h1>Get Vaccinate For Free!!!</h1>
-        <h2>@Chamchuri 9 Building from 09.00 - 18.00</h2>
-        <h3>From 28 Aug 2021</h3>
+        <h1 className="font-mono">Get Vaccinate For Free!!!</h1>
+        <h2 className="font-mono">@Chamchuri 9 Building from 09.00 - 18.00</h2>
+        <h3 className="font-mono">From 28 Aug 2021</h3>
       </div>
       <button
-        className="bg-white text-teal-500 border border-teal-500 font-semibold py-2 px-2 m-2 rounded z-30 
+        className="bg-white text-teal-500 border border-teal-500 font-semibold py-2 px-4 m-4 rounded z-30 
       absolute bottom-0 right-0 hover:bg-teal-500 hover:text-white hover:border-transparent"
         onClick={(e) => {
           e.stopPropagation();
