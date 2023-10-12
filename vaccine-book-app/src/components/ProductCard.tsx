@@ -1,7 +1,6 @@
 import Image from "next/image";
 import InteractiveCard from "./InteractiveCard";
 import { Rating, Typography } from "@mui/material";
-import { useState } from "react";
 
 export default function ProductCard({
   hospitalName,
@@ -12,7 +11,7 @@ export default function ProductCard({
   hospitalName: string;
   imgSrc: string;
   onCompare: Function;
-  hospitalRating: number;
+  hospitalRating?: number;
 }) {
   return (
     <InteractiveCard contentName={hospitalName}>
@@ -26,15 +25,19 @@ export default function ProductCard({
         ></Image>
       </div>
       <div className="w-full h-[15%] p-[10px]">{hospitalName}</div>
-      <Typography component="legend">Rating</Typography>
-      <Rating
-        value={hospitalRating}
-        onChange={(event, hospitalRating) => {
-          event.preventDefault();
-          event.stopPropagation();
-          onCompare(hospitalName, hospitalRating);
-        }}
-      ></Rating>
+      {hospitalRating ? <Typography component="legend">Rating</Typography> : ""}
+      {hospitalRating ? (
+        <Rating
+          value={hospitalRating}
+          onChange={(event, hospitalRating) => {
+            event.preventDefault();
+            event.stopPropagation();
+            onCompare(hospitalName, hospitalRating);
+          }}
+        ></Rating>
+      ) : (
+        ""
+      )}
     </InteractiveCard>
   );
 }
