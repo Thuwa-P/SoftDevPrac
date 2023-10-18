@@ -1,5 +1,4 @@
 import getHospitals from "@/app/libs/getHospitals";
-import CardPanel from "@/components/CardPanel";
 import HospitalCatalog from "@/components/hospitalCatalog";
 import { LinearProgress } from "@mui/material";
 import { Suspense } from "react";
