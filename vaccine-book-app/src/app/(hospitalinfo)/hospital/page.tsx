@@ -10,7 +10,24 @@ import { Suspense } from "react";
 export default async function Hospital() {
   const hospitals = getHospitals();
   const session = await getServerSession(authOptions);
-  if (!session || !session.user.token) return null;
+  if (!session || !session.user.token)
+    return (
+      <main className="text-center p-5">
+        <h1 className="text-xl font-medium p-5 font-serif">
+          Select Your Hospital
+        </h1>
+        <Suspense
+          fallback={
+            <p>
+              {" "}
+              Loading ..... <LinearProgress />
+            </p>
+          }
+        >
+          <HospitalCatalog hospitalJson={hospitals} />
+        </Suspense>
+      </main>
+    );
   const profile = await getUserProfile(session.user.token);
   return (
     <main className="text-center p-5">

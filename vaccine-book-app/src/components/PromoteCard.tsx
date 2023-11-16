@@ -22,10 +22,12 @@ export default function PromoteCard() {
       <VideoPlayer
         vdoSrc="/video/getvaccine.mp4"
         isPlaying={playing}
+        data-test-id="video"
       ></VideoPlayer>
       <div className="m-5 font-serif">
         <p className="font-semibold">Promoted Video</p>
         <button
+          data-test-id="pauseButton"
           className="block rounded-md bg-slate-200 hover:bg-amber-700 hover:text-white px-3 py-2 text-black shadow-sm my-2"
           onClick={() => setPlaying(!playing)}
         >

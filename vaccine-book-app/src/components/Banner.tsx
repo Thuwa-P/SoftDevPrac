@@ -35,6 +35,7 @@ export default function Banner() {
         </div>
       ) : null}
       <button
+        data-test-id="bannerButton"
         className="bg-white text-teal-500 border border-teal-500 font-semibold py-2 px-4 m-4 rounded z-30 
       absolute bottom-0 right-0 hover:bg-teal-500 hover:text-white hover:border-transparent"
         onClick={(e) => {
